@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="bolsos">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>DIANMOR</title>
+</head>
+<body>
+
+    <form action="Contactenos.html" method="post">
+        <div class="elem-group">
+            <label for="name">Nombre</label>
+    <input type="text" id="name" name="visitor_name" placeholder="nombre de ejemplo" pattern="[A-Z\sa-z]{3,20} required">
+        </div>
+        <div class="elem-group">
+            <label for="email">Correo Electronico</label>
+            <input type="email" id="enail" name="visitor_email" placeholder="ejemplo@email.com " required>
+        </div>
+        <div class="elem-group">
+            <label for="departament-selection">Área a Contactar</label>
+            <select id="departament-selection" name="concerned_departament" required>
+                <option value="">Selecciona una Área</option>
+                <option value="billing">Facturación</option>
+                <option value="marketing">Marketing</option>
+                <option value="technical support">Servicio al Cliente</option>
+            </select>
+            <div class="elem-group">
+                <label for="title">Motivo de Contacto</label>
+                <input type="text" id="title" name="email_title" required placeholder="Problema/Consulta" pattern=[A-Za-z0-9\s]{8,60}>
+                </div>
+                <div class="elem-group">
+                    <label for="message">Solicitud</label>
+                    <textarea id="message" name="visitor_message" placeholder="Escribe tu mensaje aquí" required></textarea>
+                      </div>
+                      <button type="submit">Enviar Mensaje</button>
+
+              </form>
+</body>
+</html>

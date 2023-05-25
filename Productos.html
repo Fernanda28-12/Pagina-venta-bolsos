@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DIANMOR</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <img class= "izquierda" src=img/loto.png width="75px" height="75px">
+        <h2><aside>DIANMOR</aside></h2>
+        <div class="reset"></div>
+    </div>
+    
+    <nav>  
+        <ul>
+    <li><a href="Index.html">Home</a> </li>
+    <li><a href="Contactenos.html"target="_blank">Contactenos</a></li>
+    <li> <a href="inicio sesion.html" target="_blank">Inicio Sesión</a></li>
+    <li> <a href="Productos.html" target="_blank"> Productos</a></li>
+    <li> <a href="Carrito.html" target="_blank">Carrito</a></li>
+        </ul>     
+       </nav>
+    <hr>
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMG/5.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Cartera Crochet</p>
+                    <span class="precio">$ 50.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMG/6.jpg" alt="">
+                    </div>
+                    <p class="descripcion" id>Bolso Luxury </p>
+                    <span class="precio">$ 85.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMG/7.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Bolso Casual
+                    </p>
+                    <span class="precio">$ 58.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMG/8..avif" alt="">
+                    </div>
+                    <p class="descripcion">Bolso Playa</p>
+                    <span class="precio">$ 60.000</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMG/9.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Bolso    Shaggy</p>
+                    <span class="precio">$ 100.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/10.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">Bolso Dawn</p>
+                    <span class="precio">$ 78.0000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMG/11.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Bolso Channel</p>
+                    <span class="precio">$ 105.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="IMG/12.webp" alt="">
+                    </div>
+                    <p class="descripcion">Bolso Crack</p>
+                    <span class="precio">$ 88.000</span>
+                </div>
+            </div> 
+        </div>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="img/1.png" alt="" id="img">
+                <h2 id="modelo">Bolso Channel</h2>
+                <p id="descripcion">Descripción Modelo 1</p>
+
+                <span class="precio" id="precio">$ 105.000</span>
+
+                                    <button>AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
